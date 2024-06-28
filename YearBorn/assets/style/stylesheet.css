@@ -1,0 +1,15 @@
+.p{
+    color: rgb(43, 0, 230);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#birthdate-container {
+    position: relative;
+    align-items: center;
+    left: 560px;
+    top: -100px;
+}
+
+
