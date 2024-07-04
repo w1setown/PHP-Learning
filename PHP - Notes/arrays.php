@@ -42,3 +42,32 @@ $fruits2 = ["apple", "banana", "orange", "grape", "kiwi"]; // Here we are creati
 array_push($fruits2, "lemon",); // add multiple elements to the end of the array
 print_r($fruits2); // Array ( [0] => apple [1] => banana [2] => orange [3] => grape [4] => kiwi [5] => kiwi )
 
+echo "<br>";
+
+// Array Splice
+$meats = ["beef", "venison", "pork", "chicken", "lamb"]; // Here we are creating an array, that is indexed by default and we are adding elements to it
+$vegetables = ["carrot", "potato", "onion", "garlic", "tomato"]; // Here we are creating an array, that is indexed by default and we are adding elements to it
+
+array_splice($meats, 2, 0, $vegetables);
+print_r($meats);
+
+echo "<br>";
+
+// Associative & Multi-dimensional array
+
+$food = [
+    array("beef", "venison", "pork", "chicken", "lamb"), // Here we are creating an array, that is indexed by default and we are adding elements to it
+    array("carrot", "potato", "onion", "garlic", "tomato"), // Here we are creating an array, that is indexed by default and we are adding elements to it
+    array("apple", "banana", "orange", "grape", "kiwi"),
+];
+
+echo $food[0][1] . "<br>"; // venison
+
+// Associative 
+$food2 = [
+    "meats" => ["beef", "venison", "pork", "chicken", "lamb"], // Here we are creating an array, that is indexed by default and we are adding elements to it
+    "vegetables" => ["carrot", "potato", "onion", "garlic", "tomato"], // Here we are creating an array, that is indexed by default and we are adding elements to it
+    "fruits" => ["apple", "banana", "orange", "grape", "kiwi"],
+];
+
+echo $food2["meats"][0] . "<br>"; // lamb
